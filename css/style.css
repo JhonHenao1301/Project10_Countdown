@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(125, 152, 233);
+    color: aliceblue;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.clsYearTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clsYearTitle h3 {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.clsYearTitle h1 {
+    font-size: 80px;
+}
+
+.clsTimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 108, 240);
+    height: 120px;
+    width: 100%;
+    margin: 30px;
+}
+
+.clsTimer div {
+    margin: 0 24px;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: -25px;
+    position: relative;
+}
+
+.clsTimer div::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: .35em;
+    letter-spacing: 1px;
+}
+
+.clsTimer #months::before {
+    content: "Months";
+}
+
+.clsTimer #days::before {
+    content: "Days";
+}
+
+.clsTimer #hours::before {
+    content: "Hours";
+}
+
+.clsTimer #minutes::before {
+    content: "Minutes";
+}
+
+.clsTimer #seconds::before {
+    content: "Seconds";
+}
